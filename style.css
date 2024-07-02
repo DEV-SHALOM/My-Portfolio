@@ -1,0 +1,230 @@
+
+:root{
+    --defaultFont: "Josefin Sans", sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #091b2a;
+}
+
+
+#navLink{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 300px;
+    flex-wrap: wrap;
+}
+
+#headerText{
+    font-family: var(--defaultFont);
+    position: relative;
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    color: #dce5f1;
+}
+
+
+
+nav > ul > li > a{
+    font-family: var(--defaultFont);
+    padding: 10px;
+    border: 1px solid #053d53;
+    border-radius: 5px;
+    text-align: center;
+    color: #0b6efd;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px #3105886e;
+    transition: 500ms;
+}
+
+
+#navLink > ul{
+    display: inline-flex;
+    text-align: center;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+nav > ul > li > a:active{
+    color: #970505e9;
+}
+
+nav ul li a:visited{
+    color: #0b6efd;
+}
+
+#firstRule{
+    border: none;
+    height: 1px;
+    background:linear-gradient(to right, #091b2a00, #0a6ffd50, #091b2a00);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#secondRule{
+    border: none;
+    height: 1px;
+    background:linear-gradient(to right, #091b2a00, #0a6ffd1a, #091b2a00);
+    width: 25%;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+
+
+#firstLink:hover, #secondLink:hover, #thirdLink:hover, #forthLink:hover, #fifthLink:hover{
+    color: #253fb0;
+}
+
+#secondDiv{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#secondDiv > h3{
+    font-family: var(--defaultFont);
+    font-size: 2.5rem;
+    background: linear-gradient(to bottom right, #280963, #0b6efd);
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: fit-content;
+    color: transparent;
+}
+
+#secondDiv > h4{
+    font-family: var(--defaultFont);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #4700cb, #6aa8ff);
+    text-align: left;
+    margin-left: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#frontText {
+    position: relative;
+    color: #3699bd;
+    opacity: 0;
+    font-family: var(--defaultFont);
+}
+
+#frontText::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: "  ";
+    animation: fadeInOut 6s infinite linear;
+}
+
+
+#buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 60px;
+    margin-left: 30px;
+
+}
+#btn1{
+    font-weight: 700;
+    color: #091b2a;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #3699bd;
+    background-color: #0b6efd;
+    border-radius: 5px;
+    font-family: var(--defaultFont);
+    box-shadow: 1px 1px 10px #033f91;
+    transition: 300ms all;
+}
+#btn2{
+    height: 50px;
+    width: 100px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 700;
+    color: #0b6efd;
+    border: 1px solid #3699bd;
+    background-color: #091b2a;
+    border-radius: 5px;
+    font-family: var(--defaultFont);
+    box-shadow: 1px 1px 10px #033f91;
+    transition: 500ms all;
+}
+
+
+#btn1:hover{
+    color: #0b6efd;
+    background-color: #091b2a;
+    transform: scale(0.95);
+    background: linear-gradient(to bottom left, #0b6efd, #091b2a00);
+}
+#btn2:hover{
+    background: linear-gradient(to bottom right, #091b2a00, #0b6efd);
+    border: 1px solid #0b6efd;
+    color: #091b2a;
+    transform: scale(0.95);
+}
+
+
+#iconDiv{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#iconDiv > a > button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #0b6efd;
+    background-color: #091b2a;
+    transition: 500ms all;
+}
+
+button > i{
+    font-size: 1.5rem;
+    color: #0b6efd;
+}
+
+#iconDiv > a > button:hover{
+    background-color: #0b6efd;
+    border: 1px solid #091b2a;
+}
+#iconDiv > a > button:hover > i{
+    color: #091b2a;
+}
+
+
+@media (max-width: 767px) {
+    #navLink{
+        gap: 0px;
+        flex-direction: column;
+    }
+}
